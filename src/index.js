@@ -15,7 +15,7 @@ app.use("/api", orderRoute);
 
 //db connection
 mongoose
-  .connect("mongodb://localhost:27017/chapa-integration", {
+  .connect(process.env.DB_URL, {
     useNewUrlParser: true,
   })
   .then(() => console.log("Connected to db"))
