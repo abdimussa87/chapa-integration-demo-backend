@@ -2,6 +2,7 @@ import axios from "axios";
 import OrderCollection from "./orderModel.js";
 import ProductCollection from "../product/productModel.js";
 import { nanoid } from "nanoid";
+import crypto from "crypto";
 
 export const createOrder = async (req, res) => {
   try {
