@@ -4,6 +4,6 @@ const router = express.Router();
 
 router.post("/orders", createOrder);
 
-router.get("/verifyPayment", verifyPayment);
+router.post("/verifyPayment", verifyPayment);
 
 export default router;
